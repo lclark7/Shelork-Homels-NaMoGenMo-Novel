@@ -18,12 +18,12 @@ def chapter():
 
   new_text = seed
 
-  for i in range(50000):
+  for i in range(100000):
     for n in ngrams:
       if (n[:3] == new_text[-3:]):
         new_text += n[-1]
         ngrams.remove(n)
-        break
+        #break
 
   return(new_text)
   
